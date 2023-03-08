@@ -216,7 +216,7 @@ class EntityLinker(object):
 
         # TODO: application/ld+json would be more detailed? https://github.com/digitalbazaar/pyld
         return requests.post(
-            f'{endpoint}/{self.process}', headers={'accept': 'application/json'}, data=params)
+            f'{endpoint}/{self.process}', headers={'accept': 'application/json'}, verify=False, data=params)
 
     def get_remote_response(self, doc: Doc):
         """
