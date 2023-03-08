@@ -4,7 +4,7 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 def setup_package():
-    setup(name="spacy_dbpedia_spotlight",
+    setup(name="spacy_dbpedia_spotlight_v2",
     packages=find_packages(),
     long_description=long_description,
     long_description_content_type='text/markdown')
